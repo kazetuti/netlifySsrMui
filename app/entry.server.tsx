@@ -1,9 +1,9 @@
 import { CacheProvider } from '@emotion/react';
-import createEmotionServer from '@emotion/server/create-instance';
 import type { EntryContext } from '@netlify/remix-runtime';
 import { RemixServer } from '@remix-run/react';
 import { createContentSecurityPolicy } from '@shopify/hydrogen';
 import { renderToString } from 'react-dom/server';
+import { createEmotionServer } from '~/vendor/@emotion/server';
 import createEmotionCache from './createEmotionCache';
 
 export default async function handleRequest(
