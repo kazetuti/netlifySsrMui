@@ -3,8 +3,8 @@ import type { EntryContext } from '@netlify/remix-runtime';
 import { RemixServer } from '@remix-run/react';
 import { createContentSecurityPolicy } from '@shopify/hydrogen';
 import { renderToString } from 'react-dom/server';
-import { createEmotionServer } from '~/vendor/@emotion/server';
 import createEmotionCache from './createEmotionCache';
+import { createEmotionServer } from './vender/@emotion/server';
 
 export default async function handleRequest(
   request: Request,
