@@ -1,0 +1,16 @@
+node_modules
+/.cache
+/build
+/dist
+/public/build
+/.mf
+.env
+.shopify
+
+# Local Netlify folder
+.netlify
+
+# Package locks
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
